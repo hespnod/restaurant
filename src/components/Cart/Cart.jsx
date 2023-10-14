@@ -15,10 +15,13 @@ const Cart = (props) => {
             ))}
         </ul>
     );
+    const handleModalClick = () => {
+        ctx.setClicked(!ctx.clicked)
+    }
 
     return (
         (ctx.clicked &&
-            <Modal>
+            <Modal onClick={handleModalClick}>
                 {cartItems}
                 <div className={classes.total}>
                     <span>Total Amount</span>
