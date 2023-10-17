@@ -13,6 +13,7 @@ const MealsForm = props => {
             return;
         }
         props.onAddToCart(inputAmountNumber);
+        amountRef.current.value = 1;
     }
     return (
         <form onSubmit={handleSubmit}>
