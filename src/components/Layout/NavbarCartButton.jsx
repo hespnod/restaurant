@@ -14,7 +14,7 @@ const NavbarCartButton = (props) => {
     }, 0)
 
     return (
-        <div onClick={handleCartClick} className='flex justify-center bg-black bg-opacity-30 p-5 w-[10vw] rounded-lg cursor-pointer'>
+        <div onClick={handleCartClick} className='flex justify-center bg-black bg-opacity-30 p-5  rounded-lg cursor-pointer'>
             <BsCart className='text-white mt-1' />
             <span className='ml-2 text-white'>Your Cart</span>
             <span className='bg-amber-800 text-white ml-3 px-2 rounded-md'>{numberOfItems}</span>
